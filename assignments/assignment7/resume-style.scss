@@ -11,6 +11,7 @@
         margin-bottom: 5px;
         border-bottom: 2px solid black;
         padding-bottom: 10px;
+        overflow: hidden;
         box-sizing: border-box;
         h1 {
             font-size: 28px;
@@ -105,8 +106,9 @@
     
     @media (max-width:768px) {
         .main-col {
-            width: initial;
+            width: 100%;
             height: initial;
+            float: none;
         }
     }
     
@@ -117,7 +119,6 @@
     
     .main-right-col {
         @extend .main-col;
-        float: right;
     }
     
     .university li {
