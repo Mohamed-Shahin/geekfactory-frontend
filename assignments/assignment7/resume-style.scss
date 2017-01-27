@@ -1,0 +1,66 @@
+@import "reset";
+body {
+    margin: 20px;
+}
+
+header {
+    margin-bottom: 5px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    h1 {
+        font-size: 28px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    h2 {
+        font-size: 22px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    p {
+        font-size: 13px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    header img {
+        max-width: 90px;
+        max-height: 90 px;
+        width: 33%;
+        box-sizing: border-box;
+        margin: auto;
+    }
+    @media (max-width:1170px) {
+        header img {
+            display: none;
+        }
+    }
+}
+
+.header-col {
+    padding: 0 10px 20px 0;
+    width: 33%;
+    box-sizing: border-box;
+}
+
+@media (max-width:1170px) {
+    header div {
+        width: initial;
+        height: initial;
+    }
+}
+
+@media (max-width:768px) {
+    header div {
+        width: initial;
+        height: initial;
+    }
+}
+
+.header-left-col {
+    @extend .header-col;
+    float: left;
+}
+
+.header-left-col {
+    @extend .header-col;
+    float: right;
+}
