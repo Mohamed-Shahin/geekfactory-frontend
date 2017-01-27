@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px;
+}
+
+header {
+    margin-bottom: 5px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header h2 {
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header p {
+    font-size: 13px;
+}
+
+header h3 {
+    font-size: 15px;
+}
+
+header header img {
+    max-width: 90px;
+    max-height: 90 px;
+    width: 33%;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: auto;
+    align-content: center;
+}
+
+@media (max-width: 1170px) {
+    header img {
+        display: none;
+    }
+}
+
+.header-col,
+.header-left-col,
+.header-right-col {
+    padding: 0 10px 20px 0;
+    width: 33%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1170px) {
+    .header-col,
+    .header-left-col,
+    .header-right-col {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-col,
+    .header-left-col,
+    .header-right-col {
+        width: 100%;
+        height: initial;
+    }
+}
+
+.header-left-col {
+    float: left;
+}
+
+.header-right-col {
+    float: right;
+}
+
+main {
+    overflow: hidden;
+    vertical-align: top;
+}
+
+main section {
+    padding: 0 10px 0px 0;
+    box-sizing: border-box;
+    align-content: center;
+}
+
+@media (max-width: 1170px) {
+    main section {
+        width: initial;
+        overflow: hidden;
+    }
+}
+
+.main-col,
+.main-left-col,
+.main-right-col {
+    padding: 0 10px 20px 0;
+    width: 50%;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+@media (max-width: 1170px) {
+    .main-col,
+    .main-left-col,
+    .main-right-col {
+        width: initial;
+        height: initial;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-col,
+    .main-left-col,
+    .main-right-col {
+        width: initial;
+        height: initial;
+    }
+}
+
+.main-left-col {
+    float: left;
+}
+
+.main-right-col {
+    float: right;
+}
+
+.university li {
+    margin: 0 10px 8px 10px;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px 0 15px 0;
+    padding: 0 0 10 5px;
+    margin-bottom: 5px;
+}
+
+ul {
+    padding-left: 30px;
+}
+
+li {
+    margin: 0 10px 10px 10px;
+}
+
+li div {
+    display: inline;
+}

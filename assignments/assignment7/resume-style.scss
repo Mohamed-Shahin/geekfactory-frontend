@@ -11,7 +11,7 @@
         margin-bottom: 5px;
         border-bottom: 2px solid black;
         padding-bottom: 10px;
-        display: inline-block;
+        box-sizing: border-box;
         h1 {
             font-size: 28px;
             font-family: 'Times New Roman', Times, serif;
@@ -26,57 +26,58 @@
         h3 {
             font-size: 15px;
         }
-        header img {
+        img {
             max-width: 90px;
             max-height: 90 px;
             width: 33%;
+            align-content: center;
             box-sizing: border-box;
+            display: inline-block;
             margin: auto;
-        }
-        @media (max-width:1170px) {
-            header img {
-                display: none;
-            }
         }
     }
     
-    .col {
+    @media (max-width:1170px) {
+        header img {
+            display: none;
+        }
+    }
+    
+    .header-col {
         padding: 0 10px 20px 0;
         width: 33%;
         box-sizing: border-box;
     }
     
     @media (max-width:1170px) {
-        header div {
+        .header-col {
             width: 50%;
         }
     }
     
     @media (max-width:768px) {
-        header div {
-            width: initial;
+        .header-col {
+            width: 100%;
             height: initial;
         }
     }
     
     .header-left-col {
-        @extend .col;
+        @extend .header-col;
         float: left;
     }
     
     .header-right-col {
-        @extend .col;
+        @extend .header-col;
         float: right;
     }
     
     main {
         overflow: hidden;
-        display: inline-block;
+        vertical-align: top;
         section {
             padding: 0 10px 0px 0;
-            width: 50%;
             box-sizing: border-box;
-            vertical-align: top;
             align-content: center;
         }
     }
@@ -88,13 +89,34 @@
         }
     }
     
+    .main-col {
+        padding: 0 10px 20px 0;
+        width: 50%;
+        box-sizing: border-box;
+        margin: auto;
+    }
+    
+    @media (max-width:1170px) {
+        .main-col {
+            width: initial;
+            height: initial;
+        }
+    }
+    
+    @media (max-width:768px) {
+        .main-col {
+            width: initial;
+            height: initial;
+        }
+    }
+    
     .main-left-col {
-        @extend .col;
+        @extend .main-col;
         float: left;
     }
     
     .main-right-col {
-        @extend .col;
+        @extend .main-col;
         float: right;
     }
     
